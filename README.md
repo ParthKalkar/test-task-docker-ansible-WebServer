@@ -1,4 +1,4 @@
-#test-task-docker-ansible-web-server
+# test-task-docker-ansible-web-server
 DevOps test task to implement a simple web server for print the current Moscow time. Creating a docker image and automating the bootstrapping using Ansible
 
 ## Web Server
@@ -11,5 +11,5 @@ DevOps test task to implement a simple web server for print the current Moscow t
 1. Hosted on local machine
 2. Automated this process using : https://www.ansible.com/
 3. Created a ".yml" file which has the name and the actions.
-4. The actions part basically includes running the command : python -m flask run
-5. The automated version basically allows multiple hosts and can open this webservice by just writing a simple Ansible command : ansible-"name" -i hosts -K "name_of_the_raw_file.yml"
+4. The actions part basically includes running the command : `python -m flask run`
+5. The automated version basically allows multiple hosts and can open this webservice by just writing a simple Ansible command : `ansible-"name" -i hosts -K "name_of_the_raw_file.yml"`
