@@ -1,7 +1,0 @@
-- name: build container image
-      docker_image:
-        name: flask_json:latest
-        build:
-          path: /root/Dockerfile
-          source: build
-          state: present
