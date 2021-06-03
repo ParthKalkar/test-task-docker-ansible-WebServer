@@ -1,0 +1,25 @@
+---
+
+hosts: all
+tasks:
+  - name: add github ssh key
+    copy: >
+      src=files/id_rsa.github
+      dest=/root/.ssh/id_rsa.github
+      owner=root
+      group=root
+      mode=0600
+  
+  - name: configure ssh to use ansible key for github.com
+    template: >
+      src=templates/ssh_config.j2
+      dest=/root/.ssh/config
+      owner=root
+      group=root
+      mode=0644
+      
+  - name: clone a private repository
+    git: >
+      repo=ssh://git@https://github.com/ParthKalkar/test-task-docker-ansible-WebServer/tree/master
+      key_file=/root/.ssh/id_rsa.github
+      dest=/opt/repo
