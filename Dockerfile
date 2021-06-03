@@ -5,6 +5,9 @@ FROM python:3.8-slim-buster
 WORKDIR /app
 
 COPY requirements.txt requirements.txt
+RUN sudo apt-get update -y
+
+RUN sudo apt-get install -y python
 RUN pip3 install -r requirements.txt
 
 COPY . .
