@@ -17,3 +17,5 @@ DevOps test task to implement a simple web server for print the current Moscow t
 
 ## Output
 1. ![image](https://user-images.githubusercontent.com/50231750/120638304-a4817800-c478-11eb-923b-0cdbee0fbb68.png)
+2. ![image](https://user-images.githubusercontent.com/50231750/120638457-cd097200-c478-11eb-88ef-768cc74aeb32.png)
+
