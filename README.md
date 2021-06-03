@@ -7,6 +7,12 @@ DevOps test task to implement a simple web server for print the current Moscow t
 3. In my web server we only have one app.py file which makes this web service a REST API based application
 4. Created Docker image using : https://docs.docker.com/language/python/build-images/
 
+## Running Web Server
+1. `$docker build -t flask_json:latest`
+2. `$docker run -p 5000:5000 flask_json`
+3. `$docker ps -a`
+
+
 ## Bootstrapping
 1. Hosted on local machine
 2. Automated this process using : https://www.ansible.com/
