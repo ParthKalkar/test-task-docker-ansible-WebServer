@@ -3,5 +3,17 @@
   hosts : all
 
   tasks:
-    - name : Run the app
-      raw : python -m flask run
+  
+    - name: Create Network
+      community.docker.container:
+        name: flask_json
+    
+       
+        
+    - name : deploy flask_json
+      community.docker.container:
+        name: flask_json
+        image: flask_json:latest
+        ports:
+          - "80:80"
+      
