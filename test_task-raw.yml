@@ -1,0 +1,7 @@
+---
+- name : For automating the bootstrapping of the current webservice
+  hosts : all
+
+  tasks:
+    - name : Run the app
+      raw : python -m flask run
