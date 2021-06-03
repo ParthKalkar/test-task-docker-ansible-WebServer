@@ -13,3 +13,7 @@ DevOps test task to implement a simple web server for print the current Moscow t
 3. Created a ".yml" file which has the name and the actions.
 4. The actions part basically includes running the command : `python -m flask run`
 5. The automated version basically allows multiple hosts and can open this webservice by just writing a simple Ansible command : `ansible-"name" -i hosts -K "name_of_the_raw_file.yml"`
+
+
+## Output
+1. ![image](https://user-images.githubusercontent.com/50231750/120638304-a4817800-c478-11eb-923b-0cdbee0fbb68.png)
